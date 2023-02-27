@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(/assets/fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+
+// PARAMETRES GENERAUX 
+$color1: rgb(243, 243, 243);
+$color2: black;
+$color3: grey;
+$color4: rgb(209, 198, 198);
+
+body {
+    background: url(/assets/img/bg.jpg) center/cover fixed;
+    height: 100vh;
+}
+button {
+    color: $color2;
+    font-family: Inter, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 15px 45px;
+    border: 3px solid $color2;
+    background: transparent;
+    letter-spacing: 2px;
+}
+label, h6 {
+    color: $color3;
+    font-family: Inter, serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// PARAMETRES SPECIFIQUES
+.header {
+    @include center;
+}
+.header-container {
+    text-align: center;
+}
+h1 {
+    color: $color1;
+    font-family: Inter;
+    font-size: 5.5rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    width: 55%;
+    margin: 300px auto 40px;
+}

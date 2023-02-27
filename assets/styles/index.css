@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(/assets/fonts/Merriweather/Merriweather-Light.ttf);
+}
+body {
+  background: url(/assets/img/bg.jpg) center/cover fixed;
+  height: 100vh;
+}
+
+button {
+  color: black;
+  font-family: Inter, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 15px 45px;
+  border: 3px solid black;
+  background: transparent;
+  letter-spacing: 2px;
+}
+
+label, h6 {
+  color: grey;
+  font-family: Inter, serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(243, 243, 243);
+  font-family: Inter;
+  font-size: 5.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  width: 55%;
+  margin: 300px auto 40px;
+}/*# sourceMappingURL=index.css.map */
