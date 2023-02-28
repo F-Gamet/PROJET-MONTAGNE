@@ -6,6 +6,13 @@
   font-family: Merriweather;
   src: url(/assets/fonts/Merriweather/Merriweather-Light.ttf);
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
   background: url(/assets/img/bg.jpg) center/cover fixed;
   height: 100vh;
@@ -39,6 +46,12 @@ label, h6 {
   text-align: center;
 }
 
+.header-container p {
+  font-style: italic;
+  color: white;
+  font-size: 1.6rem;
+}
+
 h1 {
   color: rgb(243, 243, 243);
   font-family: Inter;
@@ -47,4 +60,73 @@ h1 {
   letter-spacing: 5px;
   width: 55%;
   margin: 300px auto 40px;
+}
+
+.header-container button {
+  border: 3px solid white;
+  border-radius: 150px;
+  margin: 80px auto 120px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 25px;
+}
+
+.arrow {
+  color: white;
+  font-size: 1.8rem;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 100px;
+  width: 80%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+#navigation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bg {
+  background: white;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 25%;
+}
+
+.logo-menu li {
+  font-size: 1.5rem;
+}
+
+.main-container {
+  max-width: 80%;
+  margin: auto;
+  padding: 100px;
+}
+
+.img-desert img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
