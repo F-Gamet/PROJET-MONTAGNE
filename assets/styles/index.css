@@ -38,7 +38,7 @@ label, h6 {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -78,7 +78,7 @@ h1 {
 
 #navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: Inter;
   color: white;
@@ -91,42 +91,330 @@ h1 {
   background: rgba(255, 255, 255, 0.14);
 }
 
-#navigation ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.bg {
-  background: white;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .menu {
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 50%;
 }
 
-.logo-menu {
+.menu ul {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  width: 25%;
+  width: 90%;
+}
+
+.menu li {
+  margin: auto;
+  padding: 36.5px;
+}
+
+#this:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+#generic:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+#elements:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+.logo menu {
+  width: 40%;
+}
+
+.logo-menu ul {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .logo-menu li {
   font-size: 1.5rem;
+  margin: auto;
+  width: 100px;
+}
+
+#twitter, #facebook, #instagram, #github {
+  text-align: center;
+}
+
+#twitter:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+#facebook:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+#instagram:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+#github:hover {
+  background: rgb(243, 243, 243);
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+.bg {
+  background: rgb(243, 243, 243);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .main-container {
   max-width: 80%;
+  margin: 0 auto 100px;
+  padding-top: 100px;
+  text-align: center;
+}
+.main-container #date {
+  font-family: Merriweather, serif;
+  font-size: 1.5rem;
+  position: relative;
+}
+.main-container #date::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(209, 198, 198);
+  width: 40%;
+  left: -80px;
+  top: 10px;
+}
+.main-container #date::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(209, 198, 198);
+  width: 40%;
+  right: -80px;
+  top: 10px;
+}
+.main-container h2 {
+  font-family: Inter, serif;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  max-width: 1000px;
+  margin: 100px auto 80px;
+}
+.main-container p {
+  line-height: 50px;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 100;
+  max-width: 850px;
   margin: auto;
-  padding: 100px;
+}
+
+.img-desert {
+  margin: auto;
 }
 
 .img-desert img {
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgb(209, 198, 198);
+}
+
+.section-left {
+  width: 50%;
+  margin: 100px;
+  text-align: center;
+  position: relative;
+}
+.section-left p {
+  font-family: Merriweather, serif;
+  font-size: 1.1rem;
+  line-height: 35px;
+  text-align: left;
+}
+
+.section-left::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 126%;
+  background: rgb(209, 198, 198);
+  top: -100px;
+  left: 115%;
+}
+
+.section-right {
+  width: 50%;
+  margin: 100px;
+  text-align: center;
+}
+.section-right p {
+  font-family: Merriweather, serif;
+  font-size: 1.1rem;
+  line-height: 35px;
+  text-align: left;
+}
+
+#date-section-right, #date-section-left {
+  margin-bottom: 30px;
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+}
+
+h3 {
+  font-family: Inter, serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 35px;
+  max-width: 260px;
+  margin: auto;
+}
+
+.section-right img, .section-left img {
+  margin: 30px auto;
+}
+
+.section-right-button, .section-left-button {
+  margin-top: 40px;
+}
+
+footer {
+  background: rgb(243, 243, 243) center/cover;
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+}
+
+.left-part {
+  width: 50%;
+  border-right: 1px solid rgb(209, 198, 198);
+}
+.left-part form {
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+}
+.left-part label {
+  padding: 20px 0;
+}
+.left-part input {
+  background: transparent;
+  height: 60px;
+  border: 1px solid rgb(209, 198, 198);
+  border-radius: 5px;
+}
+.left-part textarea {
+  background: transparent;
+  height: 250px;
+  border: 1px solid rgb(209, 198, 198);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.left-part .send input {
+  color: grey;
+  font-family: Inter, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 20px 40px;
+  letter-spacing: 1px;
+  border: 3px solid grey;
+  border-radius: 0px;
+}
+
+.right-part {
+  display: grid;
+  width: 50%;
+}
+.right-part h6 {
+  width: 25%;
+  padding-left: 60px;
+}
+.right-part p {
+  font-family: Merriweather;
+  font-size: 1.1rem;
+  color: grey;
+}
+.right-part a {
+  font-family: Merriweather;
+  font-size: 1.1rem;
+  color: grey;
+  text-decoration: none;
+}
+
+.contact-adress {
+  display: flex;
+  align-items: center;
+}
+
+.contact-phone {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(209, 198, 198);
+  border-top: 1px solid rgb(209, 198, 198);
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+}
+
+.contact-social {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(209, 198, 198);
+}
+.contact-social ul {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-social li {
+  font-size: 1.4rem;
+  border: 1px solid rgb(209, 198, 198);
+  border-radius: 500px;
+  padding: 18px;
 }/*# sourceMappingURL=index.css.map */

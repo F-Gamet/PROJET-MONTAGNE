@@ -27,19 +27,21 @@
     </header>
     
     <nav id="navigation">
-        <ul>
-            <div class="menu">
-            <li>THIS IS MASSIVELY</li>
-            <li>GENERIC PAGE</li>
-            <li>ELEMENTS REFERENCE</li>
-            </div>
-            <div class="logo-menu">
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-            </div>
-        </ul>
+        <div class="menu">
+            <ul>
+                <li id="this">THIS IS MASSIVELY</li>
+                <li id="generic">GENERIC PAGE</li>
+                <li id="elements">ELEMENTS REFERENCE</li>
+            </ul>
+        </div>
+        <div class="logo-menu">
+            <ul>
+                <li id="twitter"><i class="fa-brands fa-twitter"></i></li>
+                <li id="facebook"><i class="fa-brands fa-facebook"></i></li>
+                <li id="instagram"><i class="fa-brands fa-instagram"></i></li>
+                <li id="github"><i class="fa-brands fa-github"></i></li>
+            </ul>
+        </div>
     </nav>
 
     <section class="bg">
@@ -53,7 +55,7 @@
         </div>
     </main>
 
-    <section >
+    <section class="bottom">
         <div class="section-left">
             <div class="section-left-container">
                 <div id="date-section-left">April 24, 2017</div>
@@ -81,7 +83,7 @@
                 <input type="text">
                 <label for="message">MESSAGE</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="SEND MESSAGE">
+                <div class="send"><input type="submit" value="SEND MESSAGE"></div>
             </form>
         </div>
 
